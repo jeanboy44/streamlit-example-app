@@ -36,7 +36,7 @@ def run_manage_page():
             delete_data(delete_by_task_name)
             st.info("Deleted {}".format(delete_by_task_name))
 
-        with st.expander("Current Database"):
+        with st.beta_expander("Current Database"):
             result2 = view_all_tasks()
             new_df = pd.DataFrame(
                 result2, columns=["Task Doer", "Task", "Tast Status", "Task Due Date"]
