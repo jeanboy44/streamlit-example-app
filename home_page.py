@@ -16,7 +16,7 @@ def run_home_page():
         st.dataframe(df)
 
     if choice == "My Tasks":
-        c1, c2 = st.columns([1, 3])
+        c1, c2 = st.beta_columns([1, 3])
 
         with c1:
             st.info("Task List")
