@@ -17,7 +17,7 @@ def run_task_page():
 
     if submenu == "Add Task":
 
-        col1, col2 = st.columns(2)
+        col1, col2 = st.beta_columns(2)
 
         with col1:
             task_doer = st.text_input("Task Doer")
@@ -48,7 +48,7 @@ def run_task_page():
             task_status = task_result[0][2]
             task_due_date = task_result[0][3]
 
-            col1, col2 = st.columns(2)
+            col1, col2 = st.beta_columns(2)
 
             with col1:
                 new_task_doer = st.text_input("Task Doer", task_doer)
