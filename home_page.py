@@ -8,7 +8,7 @@ def run_home_page():
 
     choice = st.sidebar.selectbox("SubMenu", ["My Tasks", "Search"])
 
-    with st.expander("View All Task"):
+    with st.beta_expander("View All Task"):
         result = view_all_tasks()
         df = pd.DataFrame(
             result, columns=["Task Doer", "Task", "Tast Status", "Task Due Date"]
